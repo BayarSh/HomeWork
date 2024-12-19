@@ -16,6 +16,8 @@ def custom_write(file_name, strings):
         strings_positions[(line_number, byte_position)] = string
         # Увеличиваем счетчик строк
         line_number += 1
+    # Закрываем файл
+    f.close()
     # Возвращаем словарь с позициями и строками
     return strings_positions
 
